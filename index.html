@@ -3,453 +3,385 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NOIR - Fashion Forward</title>
-    <link rel="stylesheet" href="templatemo-noir-fashion.css">
-<!-- 
-TemplateMo 599 Noir Fashion
-https://templatemo.com/tm-599-noir-fashion
+    <title>Sleeky Pro - Premium Photography & Nature</title>
+    <link rel="stylesheet" href="templatemo-sleeky-pro.css">
+<!-- TemplateMo 598 Sleeky Pro
+https://templatemo.com/tm-598-sleeky-pro
 -->
 </head>
 <body>
-    <nav id="navbar">
-        <div class="nav-container">
-            <a href="#home" class="logo-link">
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav-container">
+            <a href="#home" class="logo-container">
                 <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                     <defs>
-                        <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" style="stop-color:#fff;stop-opacity:1" />
-                            <stop offset="100%" style="stop-color:#ff3366;stop-opacity:1" />
+                        <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#FF6B6B"/>
+                            <stop offset="100%" style="stop-color:#7FFFD4"/>
                         </linearGradient>
                     </defs>
-                    <polygon points="50,10 20,50 50,90 80,50" fill="none" stroke="url(#logoGrad)" stroke-width="3"/>
-                    <circle cx="50" cy="50" r="5" fill="url(#logoGrad)"/>
+                    <circle cx="50" cy="50" r="45" fill="url(#logoGradient)" opacity="0.1"/>
+                    <path d="M20 60 L35 40 L50 55 L65 35 L80 50" stroke="url(#logoGradient)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="35" cy="40" r="3" fill="url(#logoGradient)"/>
+                    <circle cx="50" cy="55" r="3" fill="url(#logoGradient)"/>
+                    <circle cx="65" cy="35" r="3" fill="url(#logoGradient)"/>
+                    <rect x="25" y="65" width="50" height="15" rx="7" fill="url(#logoGradient)" opacity="0.3"/>
                 </svg>
-                <span class="logo-text">NOIR</span>
+                <span class="logo-text">Sleeky Pro</span>
             </a>
-            <ul class="nav-links">
+            <ul class="nav-menu" id="navMenu">
                 <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#collections" class="nav-link">Collections</a></li>
-                <li><a href="#featured" class="nav-link">Featured</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
-                <li><a href="#contact" class="nav-cta">Get In Touch</a></li>
             </ul>
-            <div class="menu-toggle" id="menuToggle">
+            <button class="hamburger" id="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
-        </div>
-    </nav>
+            </button>
+        </nav>
+    </header>
 
-    <div class="mobile-nav" id="mobileNav">
-        <ul class="mobile-nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#collections">Collections</a></li>
-            <li><a href="#featured">Featured</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
-
-    <section class="hero" id="home">
-        <div class="hero-bg"></div>
-        <div class="hero-container">
-            <div class="hero-left">
-                <div class="hero-badge">New Collection 2025</div>
-                <h1 class="hero-title">
-                    <span class="line"><span>Redefine</span></span>
-                    <span class="line"><span>Your <span class="accent">Style</span></span></span>
-                    <span class="line"><span>Revolution</span></span>
-                </h1>
-                <p class="hero-description">
-                    Discover our avant-garde collection where high fashion meets street culture. 
-                    Each piece tells a story of rebellion, elegance, and innovation.
-                </p>
-                <div class="hero-stats">
-                    <div class="stat">
-                        <span class="stat-number">500+</span>
-                        <span class="stat-label">Exclusive Pieces</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">48H</span>
-                        <span class="stat-label">Fast Delivery</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">100%</span>
-                        <span class="stat-label">Sustainable</span>
-                    </div>
-                </div>
-                <div class="cta-group">
-                    <a href="#collections" class="cta-button primary">Explore Collection</a>
-                    <a href="#featured" class="cta-button outline">Watch Runway</a>
-                </div>
-            </div>
-            <div class="hero-right">
-                <div class="hero-image-wrapper">
-                    <div class="hero-carousel">
-                        <div class="carousel-slide active">
-                            <img src="images/noir-fashion-hero-01.avif" alt="Fashion Model 1">
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="images/noir-fashion-hero-02.avif" alt="Fashion Model 2">
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="images/noir-fashion-hero-03.avif" alt="Fashion Model 3">
-                        </div>
-                        <div class="carousel-overlay"></div>
-                        <div class="carousel-indicators">
-                            <span class="indicator active" data-slide="0"></span>
-                            <span class="indicator" data-slide="1"></span>
-                            <span class="indicator" data-slide="2"></span>
-                        </div>
-                    </div>
-                    <div class="floating-tags">
-                        <div class="tag">Limited Edition</div>
-                        <div class="tag">Handcrafted</div>
-                        <div class="tag">Premium Quality</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <span></span>
-        </div>
-    </section>
-
-    <section class="collections" id="collections">
-        <div class="section-header">
-            <h2 class="section-title">Latest Collections</h2>
-            <p class="section-subtitle">Discover our curated selection</p>
-        </div>
-        
-        <div class="category-tabs">
-            <button class="tab-btn active" data-category="all">All</button>
-            <button class="tab-btn" data-category="women">Women</button>
-            <button class="tab-btn" data-category="men">Men</button>
-            <button class="tab-btn" data-category="accessories">Accessories</button>
-            <button class="tab-btn" data-category="limited">Limited Edition</button>
-        </div>
-
-        <div class="grid" id="collectionsGrid">
-            <div class="collection-card" data-category="women">
-                <div class="collection-thumbnail">
-                    <img src="images/urban-edge.avif" alt="Urban Edge Women's Collection">
-                </div>
-                <div class="card-content">
-                    <span class="card-badge">New Arrival</span>
-                    <h3 class="card-title">Urban Edge</h3>
-                    <p class="card-subtitle">Women's Collection</p>
-                    <p class="card-price">From $299</p>
-                </div>
-            </div>
-            <div class="collection-card" data-category="limited">
-                <div class="collection-thumbnail">
-                    <img src="images/midnight-luxe.avif" alt="Midnight Luxe Limited Edition">
-                </div>
-                <div class="card-content">
-                    <span class="card-badge">Limited</span>
-                    <h3 class="card-title">Midnight Luxe</h3>
-                    <p class="card-subtitle">Exclusive Drop</p>
-                    <p class="card-price">From $899</p>
-                </div>
-            </div>
-            <div class="collection-card" data-category="men">
-                <div class="collection-thumbnail">
-                    <img src="images/neo-classic.avif" alt="Neo Classic Men's Essentials">
-                </div>
-                <div class="card-content">
-                    <span class="card-badge">Bestseller</span>
-                    <h3 class="card-title">Neo Classic</h3>
-                    <p class="card-subtitle">Men's Essentials</p>
-                    <p class="card-price">From $399</p>
-                </div>
-            </div>
-            <div class="collection-card" data-category="accessories">
-                <div class="collection-thumbnail">
-                    <img src="images/accent-pieces.avif" alt="Accent Pieces Accessories">
-                </div>
-                <div class="card-content">
-                    <span class="card-badge">Trending</span>
-                    <h3 class="card-title">Accent Pieces</h3>
-                    <p class="card-subtitle">Accessories</p>
-                    <p class="card-price">From $149</p>
-                </div>
-            </div>
-            <div class="collection-card" data-category="women">
-                <div class="collection-thumbnail">
-                    <img src="images/spring-bloom.avif" alt="Spring Bloom Women's Spring">
-                </div>
-                <div class="card-content">
-                    <span class="card-badge">Pre-Order</span>
-                    <h3 class="card-title">Spring Bloom</h3>
-                    <p class="card-subtitle">Women's Spring</p>
-                    <p class="card-price">From $249</p>
-                </div>
-            </div>
-            <div class="collection-card" data-category="men">
-                <div class="collection-thumbnail">
-                    <img src="images/street-rebel.avif" alt="Street Rebel Men's Streetwear">
-                </div>
-                <div class="card-content">
-                    <span class="card-badge">Hot</span>
-                    <h3 class="card-title">Street Rebel</h3>
-                    <p class="card-subtitle">Men's Streetwear</p>
-                    <p class="card-price">From $199</p>
-                </div>
-            </div>
-            <div class="collection-card" data-category="limited">
-                <div class="collection-thumbnail">
-                    <img src="images/avant-garde.avif" alt="Avant Garde Art Meets Fashion">
-                </div>
-                <div class="card-content">
-                    <span class="card-badge">Exclusive</span>
-                    <h3 class="card-title">Avant Garde</h3>
-                    <p class="card-subtitle">Art Meets Fashion</p>
-                    <p class="card-price">From $1,299</p>
-                </div>
-            </div>
-            <div class="collection-card" data-category="accessories">
-                <div class="collection-thumbnail">
-                    <img src="images/minimal-chic.avif" alt="Minimal Chic Timeless Accessories">
-                </div>
-                <div class="card-content">
-                    <span class="card-badge">Essentials</span>
-                    <h3 class="card-title">Minimal Chic</h3>
-                    <p class="card-subtitle">Timeless Accessories</p>
-                    <p class="card-price">From $89</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="featured" id="featured">
-        <div class="featured-container">
-            <div class="featured-hero">
-                <div class="featured-content">
-                    <span class="label">Crafted with Passion</span>
-                    <h2>The Art of Fashion</h2>
-                    <p>Where tradition meets innovation. Our master craftsmen blend centuries-old techniques with cutting-edge design to create pieces that transcend time and trends. This template is proudly crafted by TemplateMo, featuring beautiful imagery from Unsplash.</p>
-                    
-                    <div class="feature-highlights">
-                        <div class="highlight-item">
-                            <div class="highlight-icon">👑</div>
-                            <div class="highlight-title">Premium Quality</div>
-                            <div class="highlight-desc">Only the finest materials and fabrics make it into our collections</div>
-                        </div>
-                        <div class="highlight-item">
-                            <div class="highlight-icon">🌱</div>
-                            <div class="highlight-title">Sustainable</div>
-                            <div class="highlight-desc">Ethically sourced materials with carbon-neutral production</div>
-                        </div>
-                        <div class="highlight-item">
-                            <div class="highlight-icon">✨</div>
-                            <div class="highlight-title">Handcrafted</div>
-                            <div class="highlight-desc">Each piece is carefully crafted by skilled artisans</div>
-                        </div>
-                    </div>
-                    
-                    <a href="#collections" class="feature-cta">Discover Our Craft</a>
-                </div>
-                
-                <div class="featured-image-section">
-                    <div class="featured-image-grid">
-                        <div class="featured-img">
-                            <img src="images/art-of-fashion-01.avif" alt="Fashion Collection Showcase">
-                        </div>
-                        <div class="featured-img">
-                            <img src="images/art-of-fashion-02.avif" alt="Luxury Fashion Details">
-                        </div>
-                        <div class="featured-img">
-                            <img src="images/art-of-fashion-03.avif" alt="Artisan Craftsmanship">
-                        </div>
-                    </div>
-                </div>
+    <!-- Hero Section with Slider -->
+    <section id="home" class="hero">
+        <div class="slider-container">
+            <div class="progress-ring">
+                <div class="progress-bar" id="progressBar"></div>
             </div>
             
-            <div class="testimonials">
-                <div class="testimonials-header">
-                    <h3>What Our Customers Say</h3>
-                    <p class="section-subtitle">Real stories from fashion enthusiasts</p>
+            <div class="slider-stage" id="sliderStage"></div>
+            <!-- You can edit slider images in JS file -->
+            <!-- Edit templatemo-sleeky-scripts.js for image path / image filenames -->
+            <div class="text-overlay" id="textOverlay">
+                <h2 class="slide-title" id="slideTitle">Mountain Peak</h2>
+                <p class="slide-description" id="slideDescription">Majestic snow-capped mountains reaching towards the endless sky, showcasing nature's raw beauty and power.</p>
+            </div>
+            
+            <button class="nav-arrow prev" id="prevArrow" aria-label="Previous"></button>
+            <button class="nav-arrow next" id="nextArrow" aria-label="Next"></button>
+            
+            <div class="controls">
+                <button class="control-btn play-pause-btn" id="playPauseBtn" title="Play/Pause">
+                    <span class="play-icon"></span>
+                    <span class="pause-icon"></span>
+                </button>
+            </div>
+            
+            <div class="dots" id="dots"></div>
+            <div class="thumbnails-container" id="thumbnails"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Advanced photography solutions powered by cutting-edge technology and unmatched expertise in extreme environments.</p>
+            </div>
+            
+            <div class="services-container">
+                <div class="services-tabs">
+                    <div class="service-tab active" data-service="photography">
+                        <span class="service-tab-icon">📸</span>
+                        <h3>Cinematic Photography</h3>
+                        <p>Ultra-high resolution captures</p>
+                    </div>
+                    
+                    <div class="service-tab" data-service="expeditions">
+                        <span class="service-tab-icon">🏔️</span>
+                        <h3>Alpine Expeditions</h3>
+                        <p>Extreme altitude adventures</p>
+                    </div>
+                    
+                    <div class="service-tab" data-service="prints">
+                        <span class="service-tab-icon">🎨</span>
+                        <h3>Fine Art Prints</h3>
+                        <p>Museum-grade collections</p>
+                    </div>
                 </div>
                 
-                <div class="testimonials-grid">
-                    <div class="testimonial-card">
-                        <div class="testimonial-rating">★★★★★</div>
-                        <div class="testimonial-quote">
-                            "NOIR has completely transformed my wardrobe. The quality and attention to detail is unmatched. Every piece feels like a work of art."
-                        </div>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">S</div>
-                            <div class="author-info">
-                                <h4>Sarah Chen</h4>
-                                <p>Fashion Blogger</p>
-                            </div>
-                        </div>
+                <div class="services-content">
+                    <div class="service-content active" id="photography">
+                        <div class="service-content-icon">📸</div>
+                        <h2>Cinematic Landscape Photography</h2>
+                        <p>Utilizing Phase One IQ4 150MP medium format cameras paired with Zeiss Otus lenses, we deliver unprecedented image quality that reveals every detail of nature's masterpieces. <a href="https://timermo.com" rel="nofollow" target="_blank">TimerMo</a> is a beautifully designed, feature-rich timer application.</p>
+                        <p>Our specialized golden hour and blue hour captures combine advanced HDR techniques with focus stacking to create images that transcend traditional photography.</p>
+                        <ul class="service-features">
+                            <li>150MP RAW files with 15 stops dynamic range</li>
+                            <li>Weather pattern tracking for optimal lighting</li>
+                            <li>Advanced focus stacking for infinite depth</li>
+                            <li>Color-calibrated workflow with 99% Adobe RGB</li>
+                            <li>Drone integration for impossible perspectives</li>
+                        </ul>
                     </div>
                     
-                    <div class="testimonial-card">
-                        <div class="testimonial-rating">★★★★★</div>
-                        <div class="testimonial-quote">
-                            "The sustainable approach combined with luxury design is exactly what I was looking for. NOIR proves you don't have to compromise."
-                        </div>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">M</div>
-                            <div class="author-info">
-                                <h4>Marcus Rodriguez</h4>
-                                <p>Creative Director</p>
-                            </div>
-                        </div>
+                    <div class="service-content" id="expeditions">
+                        <div class="service-content-icon">🏔️</div>
+                        <h2>Alpine Expedition Photography</h2>
+                        <p>Multi-day backcountry expeditions to remote peaks above 12,000 feet, accessible only by helicopter or multi-day trek. Our certified IFMGA mountain guides ensure safety while capturing impossible shots.</p>
+                        <p>Each expedition is limited to 3 participants and includes professional drone pilots, survival gear, and satellite communication systems.</p>
+                        <ul class="service-features">
+                            <li>IFMGA certified mountain guides</li>
+                            <li>Professional-grade drone cinematography</li>
+                            <li>Satellite emergency communication</li>
+                            <li>Weather-sealed camera systems rated to -40°F</li>
+                            <li>Helicopter access to remote locations</li>
+                        </ul>
                     </div>
                     
-                    <div class="testimonial-card">
-                        <div class="testimonial-rating">★★★★★</div>
-                        <div class="testimonial-quote">
-                            "I've been a customer for three years now, and each collection keeps exceeding my expectations. The fit and quality are consistently outstanding."
-                        </div>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">A</div>
-                            <div class="author-info">
-                                <h4>Alexandra Kim</h4>
-                                <p>Entrepreneur</p>
-                            </div>
-                        </div>
+                    <div class="service-content" id="prints">
+                        <div class="service-content-icon">🎨</div>
+                        <h2>Museum-Grade Fine Art Prints</h2>
+                        <p>Hand-selected archival pigment prints on premium Japanese Kozo paper, printed using 12-color K3 pigment technology for 200+ year archival stability.</p>
+                        <p>Each print includes detailed metadata: GPS coordinates, elevation, weather conditions, and the complete story behind the capture.</p>
+                        <ul class="service-features">
+                            <li>Limited editions of 25 pieces maximum</li>
+                            <li>Hand-signed and numbered by the artist</li>
+                            <li>Custom museum-quality framing available</li>
+                            <li>Certificate of authenticity with each purchase</li>
+                            <li>Available in sizes up to 72"×48"</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="contact" id="contact">
-        <div class="contact-container">
-            <div class="contact-header">
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">The Future of Nature Photography</h2>
+                <p class="section-subtitle">Where cutting-edge technology meets artistic vision to document Earth's most extraordinary landscapes.</p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-timeline">
+                    <div class="timeline-line"></div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-year">2009</div>
+                        <div class="timeline-title">Genesis in the Rockies</div>
+                        <div class="timeline-description">21-day solo expedition through Canadian Rockies. Documented climate change effects on alpine glaciers using early digital medium format systems.</div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-year">2015</div>
+                        <div class="timeline-title">National Geographic Recognition</div>
+                        <div class="timeline-description">First photographer to capture Aurora Borealis from 14,000+ feet elevation. Featured on National Geographic cover for breakthrough high-altitude night photography.</div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-year">2019</div>
+                        <div class="timeline-title">Smithsonian Acquisition</div>
+                        <div class="timeline-description">Three-piece collection acquired by Smithsonian Institution. Pioneered "patience photography" - waiting 72+ hours in extreme conditions for perfect conditions.</div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-year">2024</div>
+                        <div class="timeline-title">AI-Enhanced Workflow</div>
+                        <div class="timeline-description">Revolutionary integration of AI weather prediction and machine learning for optimal capture timing. Reducing expedition failure rate to under 5%.</div>
+                    </div>
+                </div>
+                
+                <div class="about-tech">
+                    <div class="tech-card">
+                        <div class="tech-icon">🤖</div>
+                        <div class="tech-title">AI Weather Intelligence</div>
+                        <div class="tech-description">Proprietary algorithms analyze 15+ meteorological data sources to predict optimal shooting windows with 94% accuracy up to 72 hours in advance.</div>
+                    </div>
+                    
+                    <div class="tech-card">
+                        <div class="tech-icon">🛰️</div>
+                        <div class="tech-title">Satellite Reconnaissance</div>
+                        <div class="tech-description">Real-time satellite imagery integration allows dynamic route planning and hazard avoidance during expeditions to previously inaccessible locations.</div>
+                    </div>
+                    
+                    <div class="tech-card">
+                        <div class="tech-icon">🎯</div>
+                        <div class="tech-title">Precision Capture Systems</div>
+                        <div class="tech-description">Sub-millimeter camera positioning using GPS-guided stabilization systems ensures perfect composition even in 80+ mph mountain winds.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-futuristic">
+                <div class="stat-futuristic">
+                    <h4>47</h4>
+                    <p>National Parks</p>
+                </div>
+                <div class="stat-futuristic">
+                    <h4>2.3M</h4>
+                    <p>Miles Traveled</p>
+                </div>
+                <div class="stat-futuristic">
+                    <h4>-40°F</h4>
+                    <p>Coldest Shoot</p>
+                </div>
+                <div class="stat-futuristic">
+                    <h4>99.7%</h4>
+                    <p>Client Satisfaction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="section-container">
+            <div class="section-header">
                 <h2 class="section-title">Get In Touch</h2>
-                <p class="section-subtitle">We'd love to hear from you</p>
+                <p class="section-subtitle">Ready to plan your next adventure or commission a custom photography session? We'd love to hear from you and bring your vision to life.</p>
             </div>
             
             <div class="contact-content">
-                <div class="contact-form-wrapper">
+                <div class="contact-form">
                     <form id="contactForm">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="firstName">First Name</label>
-                                <input type="text" id="firstName" name="firstName" placeholder="John" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="lastName">Last Name</label>
-                                <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
-                            </div>
-                        </div>
                         <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
                         </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
                         <div class="form-group">
                             <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" placeholder="How can we help?" required>
+                            <input type="text" id="subject" name="subject" required>
                         </div>
+                        
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea id="message" name="message" placeholder="Tell us more about your inquiry..." required></textarea>
+                            <textarea id="message" name="message" placeholder="Tell us about your project or adventure plans..." required></textarea>
                         </div>
-                        <button type="submit" class="form-submit">Send Message</button>
+                        
+                        <button type="submit" class="submit-btn">Send Message</button>
                     </form>
                 </div>
                 
                 <div class="contact-info">
-                    <div class="info-item">
-                        <div class="info-icon">📍</div>
-                        <div class="info-content">
-                            <h3>Visit Our Flagship Store</h3>
-                            <p>123 Fashion Avenue<br>
-                            Bangkok, Thailand 10110<br>
-                            Siam District</p>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h4>Studio Location</h4>
+                            <p>Rocky Mountain National Park<br>Colorado, USA 80424</p>
                         </div>
                     </div>
                     
-                    <div class="info-item">
-                        <div class="info-icon">📞</div>
-                        <div class="info-content">
-                            <h3>Call Us</h3>
-                            <p>Main: <a href="tel:+66021234567">+66 02 123 4567</a><br>
-                            Support: <a href="tel:+66021234568">+66 02 123 4568</a><br>
-                            Mon-Fri, 9AM-6PM ICT</p>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-details">
+                            <h4>Phone & WhatsApp</h4>
+                            <p>+1 (555) 123-4567</p>
                         </div>
                     </div>
                     
-                    <div class="info-item">
-                        <div class="info-icon">✉️</div>
-                        <div class="info-content">
-                            <h3>Email Us</h3>
-                            <p>General: <a href="mailto:hello@noir.fashion">hello@noir.fashion</a><br>
-                            Support: <a href="mailto:support@noir.fashion">support@noir.fashion</a><br>
-                            Press: <a href="mailto:press@noir.fashion">press@noir.fashion</a></p>
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div class="contact-details">
+                            <h4>Email Address</h4>
+                            <p>hello@sleeky.photography</p>
                         </div>
                     </div>
-                </div>
-            </div>
-            
-            <div class="map-section">
-                <div class="map-container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.551370220076!2d100.53515!3d13.730314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2993fa2f8c6d9%3A0x92cf0e47c4c2ed08!2sSilom%20MRT%20Station!5e0!3m2!1sen!2sth!4v1697000000000" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">🕐</div>
+                        <div class="contact-details">
+                            <h4>Business Hours</h4>
+                            <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Weekend tours by appointment</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
+    <!-- Footer -->
+    <footer class="footer">
         <div class="footer-content">
-            <div class="footer-brand">
-                <h3>NOIR</h3>
-                <p>Redefining fashion with bold designs, sustainable practices, and uncompromising quality. Join us in creating the future of style.</p>
-                <div class="social-links">
-                    <a href="#" class="social-link">f</a>
-                    <a href="#" class="social-link">t</a>
-                    <a href="#" class="social-link">i</a>
-                    <a href="#" class="social-link">p</a>
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="footerLogoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#FF6B6B"/>
+                                    <stop offset="100%" style="stop-color:#7FFFD4"/>
+                                </linearGradient>
+                            </defs>
+                            <circle cx="50" cy="50" r="45" fill="url(#footerLogoGradient)" opacity="0.1"/>
+                            <path d="M20 60 L35 40 L50 55 L65 35 L80 50" stroke="url(#footerLogoGradient)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="35" cy="40" r="3" fill="url(#footerLogoGradient)"/>
+                            <circle cx="50" cy="55" r="3" fill="url(#footerLogoGradient)"/>
+                            <circle cx="65" cy="35" r="3" fill="url(#footerLogoGradient)"/>
+                            <rect x="25" y="65" width="50" height="15" rx="7" fill="url(#footerLogoGradient)" opacity="0.3"/>
+                        </svg>
+                        <span class="footer-logo-text">Sleeky</span>
+                    </div>
+                    <p class="footer-description">Capturing Earth's most extraordinary landscapes through cutting-edge technology and artistic vision. From alpine expeditions to fine art prints, we document nature's masterpieces.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">🐦</a>
+                        <a href="#" class="social-link">💼</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">Landscape Photography</a>
+                        <a href="#" class="footer-link">Alpine Expeditions</a>
+                        <a href="#" class="footer-link">Fine Art Prints</a>
+                        <a href="#" class="footer-link">Custom Commissions</a>
+                        <a href="#" class="footer-link">Workshops</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">About Us</a>
+                        <a href="#" class="footer-link">Our Story</a>
+                        <a href="#" class="footer-link">Careers</a>
+                        <a href="#" class="footer-link">Press</a>
+                        <a href="#" class="footer-link">Blog</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">Help Center</a>
+                        <a href="#" class="footer-link">Privacy Policy</a>
+                        <a href="#" class="footer-link">Terms of Service</a>
+                        <a href="#" class="footer-link">Shipping Info</a>
+                        <a href="#" class="footer-link">Returns</a>
+                    </div>
                 </div>
             </div>
-            <div class="footer-column">
-                <h4>Shop</h4>
-                <ul>
-                    <li><a href="#">New Arrivals</a></li>
-                    <li><a href="#">Women</a></li>
-                    <li><a href="#">Men</a></li>
-                    <li><a href="#">Accessories</a></li>
-                    <li><a href="#">Sale</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h4>Support</h4>
-                <ul>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Size Guide</a></li>
-                    <li><a href="#">Shipping Info</a></li>
-                    <li><a href="#">Returns</a></li>
-                    <li><a href="#">FAQ</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h4>Company</h4>
-                <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Press</a></li>
-                    <li><a href="#">Sustainability</a></li>
-                    <li><a href="#">Terms</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 NOIR. All rights reserved. | Designed by <a href="https://templatemo.com" target="_blank" rel="nofollow" style="color: var(--accent); text-decoration: none;">TemplateMo</a></p>
-            <div class="payment-methods">
-                <div class="payment-icon">VISA</div>
-                <div class="payment-icon">MC</div>
-                <div class="payment-icon">AMEX</div>
-                <div class="payment-icon">PAY</div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    © 2026 Sleeky Photography. All rights reserved.
+                </div>
+                <div class="footer-credits">
+                    Try <a href="https://timermo.com" rel="nofollow" target="_blank">Your Timer</a>
+                     | Designed by <a href="https://templatemo.com" target="_blank" rel="noopener nofollow">TemplateMo</a>
+                </div>
             </div>
         </div>
     </footer>
 
-    <script src="templatemo-noir-scripts.js"></script>
+    <script src="templatemo-sleeky-scripts.js"></script>
 </body>
 </html>
